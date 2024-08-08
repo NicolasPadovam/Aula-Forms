@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Formulários</title>
+</head> 
+<body>
+
+    <div class="link">
+        <h2>Formulários</h2> 
+    </div>
+    
+    <h1>Aula 01</h1>
+
+    <H1>Forms</H1>
+<form id="dados" name="dados" method="post" action="/aplicação">
+<!-- method: como a aplicação irá conversar com o servidor (padrão get mas em informações pessoais deve ser post) -->
+
+        <!-- Agregar Informações - Dados-->
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+        <!-- FOR= serve pra linkar o campo com um id -->
+        <label for="usuario">Nome</label>
+        <input type="text" id="usuario" name="usuario">
+        </fieldset>
+
+        <fieldset>
+            <legend>Senha</legend>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+        
+        <fieldset>
+            <legend>URL</legend>
+            <label for="url">Endereço</label>
+            <input type="url" id="url" name="url">
+        </fieldset>
+
+        <fieldset>
+            <legend>Campo de Busca</legend>
+            <label for="search">Pesquisa</label>
+            <input type="search" id="search" name="search">
+        </fieldset>
+
+        <fieldset>
+            <legend>Campo de Telefone</legend>
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" name="tel">
+        </fieldset>
+
+        <fieldset>
+            <legend>Campo de Color</legend>
+            <label for="color">Selecione uma cor</label>
+            <input type="color" id="color" name="color">
+        </fieldset>
+
+        <fieldset>
+            <legend>Selecione um Arquivo</legend>
+            <label for="file">Selecione uma cor</label>
+            <input type="file" id="file" name="file">
+        </fieldset>
+
+    </form>
+
+    <a href="./aula02.html" >Ir para Aula 02</a>
+</body>
+</html>

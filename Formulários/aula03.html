@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="link">  
+        <h2>Formulários</h2> 
+        <a href="./aula02.html" >Voltar para a Aula 02</a>
+    </div>
+
+    
+    <h1>Aula 03</h1> <h1>Radio e CheckBox</h1>
+
+    <form  id="dados" name="dados"  method="post" action="">
+
+        <fieldset>
+            <legend>Campo Radio</legend>
+            <p>Tipo de Conta</p>  
+            <!-- para ter SOMENTE um selecionado, os radios devem ter o mesmo name   -->
+            <!-- ID É UNICO-->
+            <input type="radio" name="teste" id="conta1" value="free">
+            <label for="conta1">Free</label>
+            
+            <input type="radio" name="teste" id="conta2" value="basic">
+            <label for="conta2">Basic</label>
+
+            <input type="radio" name="teste" id="conta3" value="plus">
+            <label for="conta3">Plus</label>
+            
+            <input type="radio" name="teste" id="conta4" value="premium">
+            <label for="conta4">Premium</label> 
+    </fieldset>
+    <h4>Através do <strong>value</strong>, é possivel resgatar a opção que foi selecionada </h4>
+    <fieldset>
+        <Legend>CheckBox</Legend>
+        <p>Preferências</p>
+        <input type="checkbox" id="preferencia1" name="front" value="1">
+        <label for="preferencia1">Front-End</label>
+        <input type="checkbox" id="preferencia2" name="back" value="2">
+        <label for="preferencia2">Back-End</label>
+        <input type="checkbox" id="preferencia3" name="banco" value="3">
+        <label for="preferencia3">Banco de Dados</label>
+
+    </fieldset>
+
+
+
+    <h1>Campos de Seleção</h1>
+
+    <fieldset>
+        <legend>Select</legend>
+        <label for="atuacao">Área de Atuação</label>
+        
+        <select name="atuacao" id="atuacao">
+            <!-- disable selected para iniciar com o valor mas logo ser disabilitado -->
+            <option value="0" disabled selected>Selecione sua opção</option>
+            <option value="1">Front</option>
+            <option value="2">Back</option>
+            <option value="3">Banco de Dados</option>
+        </select>
+
+        </fieldset>
+
+        <h1>Data List</h1>
+
+        <fieldset>
+        <Legend>Data List</Legend>
+        <!-- datalist deve ter o id com o mesmo nome que a tag list -->
+            <input list="linguagens" id="lista-Linguagens">
+            <datalist id="linguagens">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="Java">
+                <option value="JavaS Script">
+            </datalist>
+        </fieldset>
+    </form>
+
+    <a href="/aula04.html">Ir pra Aula 04</a>
+</body>
+</html>

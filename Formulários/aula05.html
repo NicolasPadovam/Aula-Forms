@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="link">
+        <h2>Formulários</h2> 
+        <a href="./aula04.html" >Voltar para a Aula 04</a>
+    </div>
+
+    <h1>Aula 05</h1> <h1>Atributos Especiais</h1>
+
+    <form id="dados" name="dados" method="post" action="">
+        <fieldset>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" 
+            required placeholder="Ex: User 64356" minlength="5" maxlength="10"
+            autofocus>
+        <!--REQUIRED torna um campo OBRIGATÓRIO
+            PLACEHOLDER deixa um texto que some ao clicar
+            MINLENGTH e MAXLENGTH definem o tamanho do campo
+            READONLY torna o campo somente leitura
+            AUTOFOCUS foca o campo quando inicializa a pagina-->
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Enviar Dados">
+        </fieldset>
+
+
+
+
+
+</body>
+</html>

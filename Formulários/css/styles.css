@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Chakra Petch";
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    margin: 0 47%;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #dc143c;
+    text-wrap: nowrap;
+}
+
+
+h1{
+    margin: 20px;
+}
+
+h4{
+    margin: 20px;
+}
+
+form{
+    width: 90%;
+    margin: 20px;
+    font-size: 24px;
+}
+fieldset{
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+}
+
+legend{
+    color: #dc143c;
+    font-weight: 800;
+}
+
+strong{
+    color: #dc143c;
+}
+
+textarea{
+    width: 80%;
+    width: 200px;
+    padding: 20px;
+    resize: none;
+}
